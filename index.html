@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="port-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katiane pereira</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+      <ul class="menu">
+        <li>
+          <a href="#inicio" class="menu-link">inicio</a>
+        </li>
+        <li>
+          <a href="#sobre" class="menu-link">sobre</a>
+        </li>
+
+        <li>
+          <a href="#planos" class="menu-link">planos</a>
+        </li>
+        <li>
+          <a href="#contatos" class="menu-link">contatos</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="inicio" class="cabecalho">
+      <img src="img/perfil.jpg" alt="foto Katiane" class="foto-perfil" />
+      <h1 class="nome-responsivo">Katiane</h1>
+      <p class="cabecalho-subtitulo">Nutricionista</p>
+    </main>
+    <section id="sobre" class="sobre">
+      <h2 class="sobre-titulo">Sobre mim</h2>
+      <div class="sobre-caixa">
+        <p class="sobre-paragrafo">
+          Olá! Sou Katiane Pereira, nutricionista apaixonada por promover saúde
+          e bem-estar por meio de uma alimentação equilibrada e consciente. Com
+          anos de experiência na área da Nutrição, ajudo meus pacientes a
+          alcançarem seus objetivos com planos personalizados, acolhimento e
+          acompanhamento contínuo. Acredito que cada pessoa é única, por isso,
+          meu trabalho vai além de dietas restritivas: busco construir com você
+          uma relação saudável com a comida, respeitando suas individualidades e
+          seu estilo de vida. Seja seu objetivo emagrecer, ganhar massa
+          muscular, controlar doenças crônicas ou simplesmente ter mais
+          qualidade de vida, estou aqui para caminhar ao seu lado nessa jornada!
+        </p>
+      </div>
+    </section>
+    <section id="planos" class="planos">
+      <h2 class="planos-titulo">Meus Planos</h2>
+      <div class="planos-caixa">
+        <div class="planos-card">
+          <img src="img/card1.jpeg" class="planos-imagem" />
+          <h3 class="info-planos">🌿 Pacote Essencial – Avaliação Única</h3>
+          <p class="paragrafo-planos">
+            Consulta única com plano alimentar(R$ 180,00)
+          </p>
+        </div>
+
+        <div class="planos-card">
+          <img src="img/card2.jpeg" class="planos-imagem" />
+          <h3 class="info-planos">🔄 Pacote Reeducação – 1 Mês</h3>
+          <p class="paragrafo-planos">
+            1 consulta + 1 retorno Ajustes no plano alimentar (R$ 220,00)
+          </p>
+        </div>
+
+        <div class="planos-card">
+          <img src="img/card3.jpeg" class="planos-imagem" />
+          <div class="caixa-textos-projeto"></div>
+          <h3 class="info-planos">🏃‍♀️ Pacote Performance – 3 Meses</h3>
+          <p class="paragrafo-planos">
+            3 consultas mensais Suporte e suplementação personalizada (R$ 600,00
+            ou 3x de R$ 200,00)
+          </p>
+        </div>
+
+        <div class="planos-card">
+          <img src="img/card4.jpeg" class="planos-imagem" />
+          <div class="caixa-textos-projeto">
+            <h3 class="info-planos">🖥️ Pacote Online</h3>
+            <p class="paragrafo-planos">
+              R$ 150,00 (consulta avulsa) R$ 280,00 (consulta + retorno)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+      <h2 class="contatos-titulo">Entre em contato</h2>
+      <form 
+        class="formulario-contato"
+        action="https://formspree.io/f/mblyyknk"
+        method="POST"
+      >
+        <div class="grupo-form">
+          <input placeholder="Nome" class="campo-form" name="nome" required />
+        </div>
+        <div class="grupo-form">
+          <textarea
+            class="campo-form"
+            placeholder="Digite Sua Mensagem"
+            rows="6"
+            name="mensagem"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="botao-form">Enviar Email</button>
+      </form>
+    </section>
+    <footer class="rodape">
+      <p>&copy; 2025 Katiane Pereira Nutricionista. Todos os direitos reservados.</p>
+      <p>
+        <a href="mailto:katynutricionista@hotmail.com" class="rodape-link">Contato por e-mail</a>
+        &nbsp;|&nbsp;
+        <a href="https://www.instagram.com/katiane_nutricionista?igsh=NzRydnlmemRkanFx" class="rodape-link" target="_blank">Instagram</a>
+      </p>
+    </footer>
+  </body>
+</html>

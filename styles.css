@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --cor-principal: #787a5e;
+  --cor-secundaria: #bbbeaa;
+  --cor-texto: #080808;
+  --claro: #2e2d2d;
+  --escuro: #e9edca;
+  --mais-escuro: #000000;
+  --vidro: rgba(255, 255, 255, 0.1);
+}
+body {
+  background-color: #d3a373af;
+  color: var(--claro);
+}
+.navegacao {
+  position: fixed;
+  background-color: #4e3e2e7e;
+  width: 100%;
+  z-index: 100;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.menu-link::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    var(--cor-principal),
+    var(--cor-secundaria)
+  );
+  transition: width 0.5 s ease;
+}
+.menu-link:hover::after {
+  width: 100%;
+}
+.foto-perfil {
+  display: block;
+  margin: 40px auto 24px auto;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 320px;
+  height: 320px;
+  max-width: 90vw;
+  max-height: 90vw;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.14);
+}
+.cabecalho {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin: 20px;
+  color: #0d2e26;
+}
+.cabecalho-subtitulo {
+  font-size: 1.5rem;
+  color: #333232;
+}
+.sobre {
+  padding: 6rem 2rem;
+}
+.sobre-titulo {
+  font-size: 3rem;
+  color: var(--claro);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sobre-caixa {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 1.5px solid rgb(7, 27, 2);
+  backdrop-filter: blur(10px);
+  background: #3f77698a;
+}
+.sobre-paragrafo {
+  text-align: center;
+  font-size: 1rem;
+}
+.planos {
+  padding: 6rem 2rem;
+}
+
+.planos-titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+.planos-card:hover {
+  box-shadow: 0 10px 20px #0d2e26;
+  transform: translateY(-10px) scale(1);
+}
+
+.planos-caixa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.planos-card {
+  background: rgba(42, 102, 54, 0.459);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px #000000;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.planos-imagem {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.info-planos {
+  margin-bottom: 5px;
+}
+.paragrafo-planos {
+  color: rgba(0, 0, 0, 0.637);
+  line-height: 1.25rem;
+}
+.contatos {
+  padding: 6rem 2rem;
+}
+.contatos-titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+.formulario-contato {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(42, 102, 54, 0.459);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+}
+
+.campo-form {
+  width: 100%;
+  padding: 1rem;
+  background: rgb(31, 75, 40);
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #214b3f;
+}
+
+.campo-form:focus {
+  border-color: #1a2421;
+  box-shadow: 0 0 10px #1a2421;
+}
+
+.grupo-form {
+  margin-bottom: 1.5rem;
+}
+
+.botao-form {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: #0d2e26;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.botao-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px #1a2421;
+}
+.nome-responsivo {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
+  color: #2d3a2e;
+  margin: 36px 0 28px 0;
+  letter-spacing: 3px;
+  line-height: 1.1;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 600px) {
+  .nome-responsivo {
+    font-size: 2.5rem;
+    margin: 24px 0 18px 0;
+    letter-spacing: 2px;
+  }
+  .foto-perfil {
+    width: 80vw;
+    height: 80vw;
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+.rodape {
+  background: #2d3a2e;
+  color: #fff;
+  text-align: center;
+  padding: 28px 12px 18px 12px;
+  font-size: 1rem;
+  margin-top: 48px;
+}
+
+.rodape-link {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.rodape-link:hover {
+  color: #388e3c;
+}
