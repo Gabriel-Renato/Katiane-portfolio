@@ -88,15 +88,38 @@
         method="POST"
       >
         <div class="grupo-form">
-          <input placeholder="Nome" class="campo-form" name="nome" required />
+          <input 
+            placeholder="Nome" 
+            class="campo-form" 
+            id="nome" 
+            name="nome" 
+            required 
+            aria-required="true"
+            title="Por favor, preencha seu nome para contato."
+          />
+        </div>
+        <div class="grupo-form">
+          <input 
+            type="tel"
+            placeholder="Número para contato"
+            class="campo-form"
+            id="numero"
+            name="numero"
+            required
+            aria-required="true"
+            pattern="[0-9]{10,15}"
+            title="Digite um número de telefone válido para contato."
+          />
         </div>
         <div class="grupo-form">
           <textarea
             class="campo-form"
             placeholder="Digite Sua Mensagem"
             rows="6"
+            id="mensagem"
             name="mensagem"
             required
+            aria-required="true"
           ></textarea>
         </div>
         <button type="submit" class="botao-form">Enviar Email</button>
