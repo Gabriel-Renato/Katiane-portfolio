@@ -431,9 +431,10 @@ body {
 
 .planos-caixa {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--espacamento-xl);
   margin-top: var(--espacamento-xl);
+  align-items: start;
 }
 
 .planos-card {
@@ -444,6 +445,9 @@ body {
   box-shadow: var(--sombra-leve);
   border: 1px solid var(--cor-borda);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .planos-card:hover {
@@ -453,11 +457,11 @@ body {
 
 .planos-card-destaque {
   border: 2px solid var(--cor-primaria);
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .planos-card-destaque:hover {
-  transform: scale(1.05) translateY(-10px);
+  transform: scale(1.02) translateY(-10px);
 }
 
 .planos-header {
@@ -493,6 +497,9 @@ body {
 
 .planos-content {
   padding: var(--espacamento-xl);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .info-planos {
@@ -511,6 +518,7 @@ body {
 .planos-lista {
   list-style: none;
   margin-bottom: var(--espacamento-xl);
+  flex-grow: 1;
 }
 
 .planos-lista li {
@@ -522,6 +530,7 @@ body {
 .planos-preco {
   text-align: center;
   margin-bottom: var(--espacamento-lg);
+  margin-top: auto;
 }
 
 .preco-valor {
@@ -872,7 +881,7 @@ body {
   }
   
   .planos-caixa {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--espacamento-lg);
   }
 }
@@ -949,8 +958,8 @@ body {
   }
   
   .planos-caixa {
-    grid-template-columns: 1fr;
-    gap: var(--espacamento-lg);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--espacamento-sm);
   }
   
   .planos-card-destaque {
@@ -963,15 +972,20 @@ body {
   }
   
   .planos-content {
-    padding: var(--espacamento-lg);
+    padding: var(--espacamento-md);
   }
   
   .info-planos {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   
   .preco-valor {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  .planos-lista li {
+    font-size: 0.85rem;
+    padding: 2px 0;
   }
   
   .especialidades-grid {
@@ -1105,19 +1119,30 @@ body {
     font-size: 1.1rem;
   }
   
+  .planos-caixa {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--espacamento-xs);
+  }
+  
   .planos-content {
-    padding: var(--espacamento-md);
+    padding: var(--espacamento-sm);
   }
   
   .info-planos {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   
   .preco-valor {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   
   .planos-lista li {
+    font-size: 0.8rem;
+    padding: 1px 0;
+  }
+  
+  .planos-botao {
+    padding: var(--espacamento-sm);
     font-size: 0.9rem;
   }
   
@@ -1194,5 +1219,32 @@ body {
   .credencial-item {
     font-size: 0.75rem;
     padding: var(--espacamento-xs) var(--espacamento-sm);
+  }
+  
+  .planos-caixa {
+    grid-template-columns: 1fr;
+    gap: var(--espacamento-md);
+  }
+  
+  .planos-content {
+    padding: var(--espacamento-md);
+  }
+  
+  .info-planos {
+    font-size: 1.2rem;
+  }
+  
+  .preco-valor {
+    font-size: 1.8rem;
+  }
+  
+  .planos-lista li {
+    font-size: 0.9rem;
+    padding: 2px 0;
+  }
+  
+  .planos-botao {
+    padding: var(--espacamento-sm) var(--espacamento-md);
+    font-size: 1rem;
   }
 }
