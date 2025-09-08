@@ -881,7 +881,7 @@ body {
   }
   
   .planos-caixa {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--espacamento-lg);
   }
 }
@@ -958,8 +958,8 @@ body {
   }
   
   .planos-caixa {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--espacamento-sm);
+    grid-template-columns: 1fr;
+    gap: var(--espacamento-lg);
   }
   
   .planos-card-destaque {
@@ -969,23 +969,6 @@ body {
   
   .planos-card-destaque:hover {
     transform: translateY(-5px);
-  }
-  
-  .planos-content {
-    padding: var(--espacamento-md);
-  }
-  
-  .info-planos {
-    font-size: 1.2rem;
-  }
-  
-  .preco-valor {
-    font-size: 1.8rem;
-  }
-  
-  .planos-lista li {
-    font-size: 0.85rem;
-    padding: 2px 0;
   }
   
   .especialidades-grid {
@@ -1120,30 +1103,8 @@ body {
   }
   
   .planos-caixa {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--espacamento-xs);
-  }
-  
-  .planos-content {
-    padding: var(--espacamento-sm);
-  }
-  
-  .info-planos {
-    font-size: 1.1rem;
-  }
-  
-  .preco-valor {
-    font-size: 1.6rem;
-  }
-  
-  .planos-lista li {
-    font-size: 0.8rem;
-    padding: 1px 0;
-  }
-  
-  .planos-botao {
-    padding: var(--espacamento-sm);
-    font-size: 0.9rem;
+    grid-template-columns: 1fr;
+    gap: var(--espacamento-md);
   }
   
   .depoimento-card {
@@ -1224,27 +1185,5 @@ body {
   .planos-caixa {
     grid-template-columns: 1fr;
     gap: var(--espacamento-md);
-  }
-  
-  .planos-content {
-    padding: var(--espacamento-md);
-  }
-  
-  .info-planos {
-    font-size: 1.2rem;
-  }
-  
-  .preco-valor {
-    font-size: 1.8rem;
-  }
-  
-  .planos-lista li {
-    font-size: 0.9rem;
-    padding: 2px 0;
-  }
-  
-  .planos-botao {
-    padding: var(--espacamento-sm) var(--espacamento-md);
-    font-size: 1rem;
   }
 }
