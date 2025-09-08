@@ -173,12 +173,31 @@ Enviado através do site portfólio da Katiane Pereira
         }
     });
 
-    // Menu mobile (para futuras implementações)
+    // Menu mobile funcional
     const mobileToggle = document.querySelector('.mobile-menu-toggle');
-    if (mobileToggle) {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu .menu-link');
+    
+    if (mobileToggle && mobileMenu) {
         mobileToggle.addEventListener('click', function() {
-            // Implementar menu mobile se necessário
-            console.log('Menu mobile clicado');
+            mobileToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+        
+        // Fechar menu ao clicar nos links
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // Fechar menu ao clicar fora dele
+        document.addEventListener('click', function(e) {
+            if (!mobileToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
         });
     }
 
