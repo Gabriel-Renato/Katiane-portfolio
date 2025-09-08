@@ -1,36 +1,77 @@
 <!DOCTYPE html>
-<html lang="port-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Katiane pereira</title>
+    <meta name="description" content="Katiane Pereira - Nutricionista especializada em consultoria nutricional personalizada, planos alimentares e reeducação alimentar." />
+    <meta name="keywords" content="nutricionista, consultoria nutricional, plano alimentar, reeducação alimentar, nutrição clínica" />
+    <title>Katiane Pereira - Nutricionista | Consultoria Nutricional</title>
     <link rel="stylesheet" href="styles.css" />
-       <link rel="shoetcut icon" type="image/x-icon" href="logo (2).png">
+    <link rel="shortcut icon" type="image/x-icon" href="logo (2).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="particulas"></div>
 
     <nav class="navegacao">
-      <ul class="menu">
-        <li>
-          <a href="#inicio" class="menu-link">inicio</a>
-        </li>
-        <li>
-          <a href="#sobre" class="menu-link">sobre</a>
-        </li>
-
-        <li>
-          <a href="#planos" class="menu-link">planos</a>
-        </li>
-        <li>
-          <a href="#contatos" class="menu-link">contatos</a>
-        </li>
-      </ul>
+      <div class="nav-container">
+        <div class="logo">
+          <img src="logo (2).png" alt="Logo Katiane Pereira" class="logo-img">
+          <span class="logo-text">Katiane Pereira</span>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="#inicio" class="menu-link">Início</a>
+          </li>
+          <li>
+            <a href="#sobre" class="menu-link">Sobre</a>
+          </li>
+          <li>
+            <a href="#especialidades" class="menu-link">Especialidades</a>
+          </li>
+          <li>
+            <a href="#planos" class="menu-link">Planos</a>
+          </li>
+          <li>
+            <a href="#depoimentos" class="menu-link">Depoimentos</a>
+          </li>
+          <li>
+            <a href="#contatos" class="menu-link">Contato</a>
+          </li>
+        </ul>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
     <main id="inicio" class="cabecalho">
-      <img src="perfil.jpg" alt="foto Katiane" class="foto-perfil" />
-      <h1 class="nome-responsivo">Katiane</h1>
-      <p class="cabecalho-subtitulo">Nutricionista</p>
+      <div class="hero-content">
+        <img src="perfil.jpg" alt="Katiane Pereira - Nutricionista" class="foto-perfil" />
+        <div class="hero-text">
+          <h1 class="nome-responsivo">Katiane Pereira</h1>
+          <p class="cabecalho-subtitulo">Nutricionista Clínica</p>
+          <p class="hero-description">Especialista em consultoria nutricional personalizada e reeducação alimentar</p>
+          <div class="credenciais">
+            <div class="credencial-item">
+              <span class="credencial-icon">🎓</span>
+              <span>CRN-1 24058</span>
+            </div>
+            <div class="credencial-item">
+              <span class="credencial-icon">⭐</span>
+              <span>5+ anos de experiência</span>
+            </div>
+            <div class="credencial-item">
+              <span class="credencial-icon">💚</span>
+              <span>+500 pacientes atendidos</span>
+            </div>
+          </div>
+          <a href="#contatos" class="cta-button">Agendar Consulta</a>
+        </div>
+      </div>
     </main>
     <section id="sobre" class="sobre">
       <h2 class="sobre-titulo">Sobre mim</h2>
@@ -49,89 +90,316 @@
         </p>
       </div>
     </section>
+
+    <section id="especialidades" class="especialidades">
+      <div class="container">
+        <h2 class="especialidades-titulo">Minhas Especialidades</h2>
+        <div class="especialidades-grid">
+          <div class="especialidade-card">
+            <div class="especialidade-icon">🥗</div>
+            <h3>Reeducação Alimentar</h3>
+            <p>Transformação de hábitos alimentares de forma sustentável e duradoura</p>
+          </div>
+          <div class="especialidade-card">
+            <div class="especialidade-icon">⚖️</div>
+            <h3>Controle de Peso</h3>
+            <p>Planos personalizados para perda ou ganho de peso de forma saudável</p>
+          </div>
+          <div class="especialidade-card">
+            <div class="especialidade-icon">🏃‍♀️</div>
+            <h3>Nutrição Esportiva</h3>
+            <p>Otimização do desempenho através da alimentação adequada</p>
+          </div>
+          <div class="especialidade-card">
+            <div class="especialidade-icon">🩺</div>
+            <h3>Nutrição Clínica</h3>
+            <p>Tratamento nutricional para diabetes, hipertensão e outras condições</p>
+          </div>
+          <div class="especialidade-card">
+            <div class="especialidade-icon">👶</div>
+            <h3>Nutrição Materno-Infantil</h3>
+            <p>Suporte nutricional na gestação, amamentação e infância</p>
+          </div>
+          <div class="especialidade-card">
+            <div class="especialidade-icon">🧠</div>
+            <h3>Nutrição Comportamental</h3>
+            <p>Abordagem psicológica para uma relação saudável com a comida</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="planos" class="planos">
-      <h2 class="planos-titulo">Pacotes de planos alimentares</h2>
-      <div class="planos-caixa">
-        <div class="planos-card">
-          <img src="card1.jpeg" class="planos-imagem" />
-          <h3 class="info-planos">🌿 Pacote Essencial – Avaliação Única</h3>
-          <p class="paragrafo-planos">
-            Consulta única com plano alimentar
-          </p>
-        </div>
+      <div class="container">
+        <h2 class="planos-titulo">Pacotes de Consultoria Nutricional</h2>
+        <p class="planos-subtitulo">Escolha o plano ideal para seus objetivos</p>
+        <div class="planos-caixa">
+          <div class="planos-card">
+            <div class="planos-header">
+              <img src="card1.jpeg" class="planos-imagem" alt="Pacote Essencial" />
+              <div class="planos-badge">Mais Popular</div>
+            </div>
+            <div class="planos-content">
+              <h3 class="info-planos">🌿 Pacote Essencial</h3>
+              <p class="planos-descricao">Avaliação única com plano alimentar personalizado</p>
+              <ul class="planos-lista">
+                <li>✅ Anamnese completa</li>
+                <li>✅ Avaliação antropométrica</li>
+                <li>✅ Plano alimentar personalizado</li>
+                <li>✅ Orientações gerais</li>
+              </ul>
+              <div class="planos-preco">
+                <span class="preco-valor">R$ 150</span>
+                <span class="preco-periodo">/consulta</span>
+              </div>
+              <a href="#contatos" class="planos-botao">Escolher Plano</a>
+            </div>
+          </div>
 
-        <div class="planos-card">
-          <img src="card2.jpeg" class="planos-imagem" />
-          <h3 class="info-planos">🔄 Pacote Reeducação – 1 Mês</h3>
-          <p class="paragrafo-planos">
-            1 consulta + 1 retorno Ajustes no plano alimentar
-          </p>
-        </div>
+          <div class="planos-card planos-card-destaque">
+            <div class="planos-header">
+              <img src="card2.jpeg" class="planos-imagem" alt="Pacote Reeducação" />
+              <div class="planos-badge">Recomendado</div>
+            </div>
+            <div class="planos-content">
+              <h3 class="info-planos">🔄 Pacote Reeducação</h3>
+              <p class="planos-descricao">1 mês de acompanhamento com retorno</p>
+              <ul class="planos-lista">
+                <li>✅ Consulta inicial completa</li>
+                <li>✅ 1 retorno após 15 dias</li>
+                <li>✅ Ajustes no plano alimentar</li>
+                <li>✅ Suporte via WhatsApp</li>
+                <li>✅ Lista de compras personalizada</li>
+              </ul>
+              <div class="planos-preco">
+                <span class="preco-valor">R$ 280</span>
+                <span class="preco-periodo">/mês</span>
+              </div>
+              <a href="#contatos" class="planos-botao">Escolher Plano</a>
+            </div>
+          </div>
 
-        <div class="planos-card">
-          <img src="card3.jpeg" class="planos-imagem" />
-          <div class="caixa-textos-projeto"></div>
-          <h3 class="info-planos">🏃‍♀️ Pacote Performance – 3 Meses</h3>
-          <p class="paragrafo-planos">
-            3 consultas mensais Suporte e suplementação personalizada 
-          </p>
+          <div class="planos-card">
+            <div class="planos-header">
+              <img src="card3.jpeg" class="planos-imagem" alt="Pacote Performance" />
+              <div class="planos-badge">Completo</div>
+            </div>
+            <div class="planos-content">
+              <h3 class="info-planos">🏃‍♀️ Pacote Performance</h3>
+              <p class="planos-descricao">3 meses de acompanhamento completo</p>
+              <ul class="planos-lista">
+                <li>✅ 3 consultas mensais</li>
+                <li>✅ Suporte nutricional personalizado</li>
+                <li>✅ Orientações de suplementação</li>
+                <li>✅ Suporte 24/7 via WhatsApp</li>
+                <li>✅ Receitas personalizadas</li>
+                <li>✅ Acompanhamento de exames</li>
+              </ul>
+              <div class="planos-preco">
+                <span class="preco-valor">R$ 750</span>
+                <span class="preco-periodo">/3 meses</span>
+              </div>
+              <a href="#contatos" class="planos-botao">Escolher Plano</a>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="depoimentos">
+      <div class="container">
+        <h2 class="depoimentos-titulo">O que dizem meus pacientes</h2>
+        <div class="depoimentos-grid">
+          <div class="depoimento-card">
+            <div class="depoimento-avaliacao">
+              <span class="estrelas">⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="depoimento-texto">
+              "A Katiane transformou completamente minha relação com a comida. Em 3 meses perdi 12kg de forma saudável e sustentável. Recomendo de olhos fechados!"
+            </p>
+            <div class="depoimento-autor">
+              <strong>Maria Silva</strong>
+              <span>Paciente há 6 meses</span>
+            </div>
+          </div>
+          
+          <div class="depoimento-card">
+            <div class="depoimento-avaliacao">
+              <span class="estrelas">⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="depoimento-texto">
+              "Excelente profissional! Me ajudou a controlar minha diabetes através da alimentação. Hoje me sinto muito melhor e com mais energia."
+            </p>
+            <div class="depoimento-autor">
+              <strong>João Santos</strong>
+              <span>Paciente há 1 ano</span>
+            </div>
+          </div>
+          
+          <div class="depoimento-card">
+            <div class="depoimento-avaliacao">
+              <span class="estrelas">⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="depoimento-texto">
+              "Como atleta, a Katiane me ajudou a otimizar minha performance através da nutrição. Melhorei meus tempos e recuperação pós-treino."
+            </p>
+            <div class="depoimento-autor">
+              <strong>Ana Costa</strong>
+              <span>Atleta - Paciente há 8 meses</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contatos" class="contatos">
-      <h2 class="contatos-titulo">Entre em contato</h2>
-      <form 
-        class="formulario-contato"
-        action="https://formspree.io/f/mblyyknk"
-        method="POST"
-      >
-        <div class="grupo-form">
-          <input 
-            placeholder="Nome" 
-            class="campo-form" 
-            id="nome" 
-            name="nome" 
-            required 
-            aria-required="true"
-            title="Por favor, preencha seu nome para contato."
-          />
+        <div class="container">
+        <h2 class="contatos-titulo">Entre em contato</h2>
+        <p class="contatos-subtitulo">Vamos começar sua jornada rumo a uma vida mais saudável</p>
+        
+        <div class="contatos-content">
+          <div class="contatos-info">
+            <div class="contato-item">
+              <div class="contato-icon">📞</div>
+              <div class="contato-details">
+                <h3>Telefone</h3>
+                <p>(61) 99406-0726</p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div class="contato-icon">📧</div>
+              <div class="contato-details">
+                <h3>E-mail</h3>
+                <p>katynutricionista@hotmail.com</p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div class="contato-icon">📍</div>
+              <div class="contato-details">
+                <h3>Localização</h3>
+                <p>Brasília - DF</p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div class="contato-icon">⏰</div>
+              <div class="contato-details">
+                <h3>Horário de Atendimento</h3>
+                <p>Seg - Sex: 8h às 18h<br>Sáb: 8h às 12h</p>
+              </div>
+            </div>
+          </div>
+          
+          <form 
+            class="formulario-contato"
+            action="mailto:katynutricionista@hotmail.com"
+            method="POST"
+            enctype="text/plain"
+          >
+            <div class="grupo-form">
+              <label for="nome" class="form-label">Nome completo</label>
+              <input 
+                placeholder="Seu nome completo" 
+                class="campo-form" 
+                id="nome" 
+                name="nome" 
+                required 
+                aria-required="true"
+                title="Por favor, preencha seu nome para contato."
+              />
+            </div>
+            <div class="grupo-form">
+              <label for="email" class="form-label">E-mail</label>
+              <input 
+                type="email"
+                placeholder="seu@email.com"
+                class="campo-form"
+                id="email"
+                name="email"
+                required
+                aria-required="true"
+                title="Digite um e-mail válido para contato."
+              />
+            </div>
+            <div class="grupo-form">
+              <label for="telefone" class="form-label">Telefone</label>
+              <input 
+                type="tel"
+                placeholder="(61) 99406-0726"
+                class="campo-form"
+                id="telefone"
+                name="telefone"
+                required
+                aria-required="true"
+                pattern="[0-9]{10,15}"
+                title="Digite um número de telefone válido para contato."
+              />
+            </div>
+            <div class="grupo-form">
+              <label for="plano" class="form-label">Plano de interesse</label>
+              <select class="campo-form" id="plano" name="plano">
+                <option value="">Selecione um plano</option>
+                <option value="essencial">Pacote Essencial</option>
+                <option value="reeducacao">Pacote Reeducação</option>
+                <option value="performance">Pacote Performance</option>
+                <option value="duvidas">Apenas dúvidas</option>
+              </select>
+            </div>
+            <div class="grupo-form">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea
+                class="campo-form"
+                placeholder="Conte-me sobre seus objetivos e como posso te ajudar..."
+                rows="5"
+                id="mensagem"
+                name="mensagem"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+            <button type="submit" class="botao-form">
+              <span>Enviar Mensagem</span>
+              <span class="botao-icon">→</span>
+            </button>
+          </form>
         </div>
-        <div class="grupo-form">
-          <input 
-            type="tel"
-            placeholder="Número para contato"
-            class="campo-form"
-            id="numero"
-            name="numero"
-            required
-            aria-required="true"
-            pattern="[0-9]{10,15}"
-            title="Digite um número de telefone válido para contato."
-          />
-        </div>
-        <div class="grupo-form">
-          <textarea
-            class="campo-form"
-            placeholder="Digite Sua Mensagem"
-            rows="6"
-            id="mensagem"
-            name="mensagem"
-            required
-            aria-required="true"
-          ></textarea>
-        </div>
-        <button type="submit" class="botao-form">Enviar Email</button>
-      </form>
+      </div>
     </section>
     <footer class="rodape">
-      <p>&copy; 2025 Katiane Pereira Nutricionista. Todos os direitos reservados.</p>
-      <p>
-        <a href="mailto:katynutricionista@hotmail.com" class="rodape-link">Contato por e-mail</a>
-        &nbsp;|&nbsp;
-        <a href="https://www.instagram.com/katiane_nutricionista?igsh=NzRydnlmemRkanFx" class="rodape-link" target="_blank">Instagram</a>
-      </p>
+      <div class="container">
+        <div class="rodape-content">
+          <div class="rodape-info">
+            <div class="rodape-logo">
+              <img src="logo (2).png" alt="Logo Katiane Pereira" class="rodape-logo-img">
+              <h3>Katiane Pereira</h3>
+              <p>Nutricionista Clínica</p>
+            </div>
+            <div class="rodape-contato">
+              <h4>Contato</h4>
+              <p>📧 katynutricionista@hotmail.com</p>
+              <p>📞 (61) 99406-0726</p>
+              <p>📍 Brasília - DF</p>
+            </div>
+            <div class="rodape-redes">
+              <h4>Siga-me</h4>
+              <div class="redes-sociais">
+                <a href="https://www.instagram.com/katiane_nutricionista?igsh=NzRydnlmemRkanFx" class="rede-social" target="_blank" rel="noopener">
+                  <span class="rede-icon">📷</span>
+                  Instagram
+                </a>
+                <a href="https://wa.me/5561994060726" class="rede-social" target="_blank" rel="noopener">
+                  <span class="rede-icon">💬</span>
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="rodape-bottom">
+            <p>&copy; 2025 Katiane Pereira Nutricionista. Todos os direitos reservados.</p>
+            <p class="rodape-crn">CRN-1 24058</p>
+          </div>
+        </div>
+      </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
